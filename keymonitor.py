@@ -1,3 +1,4 @@
+from __future__ import print_function
 from pynput.keyboard import Listener, Key
 import pynput
 
@@ -38,7 +39,7 @@ if __name__ == '__main__':
     while True:
         k = key.get_key()
         if k is not None:
-            print k
+            print(k)
             if k == 'esc':
                 break
         time.sleep(0.1)
